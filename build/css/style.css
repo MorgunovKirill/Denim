@@ -69,63 +69,117 @@ img {
   font-size: 0; }
 
 .container {
-  max-width: 1199px;
+  max-width: 1235px;
   margin: 0 auto;
-  padding: 0 32px; }
+  padding: 0 30px; }
   @media (max-width: 768px) {
     .container {
-      padding: 0 16px; } }
+      padding: 0 15px; } }
 
 .btn {
   font-family: "Work Sans", "Arial", sans-serif;
   font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  text-decoration: none;
-  border: none;
-  padding: 11px 30px;
-  cursor: pointer;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFFFFF;
+  background-color: #151C22;
+  text-decoration: none;
+  border: none;
+  padding: 27px 24px;
+  cursor: pointer;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   outline: none;
   -webkit-transition: color 0.3s ease, border 0.3s ease;
   transition: color 0.3s ease, border 0.3s ease; }
-  .btn span {
-    margin-right: 2px; }
-  .btn svg {
-    fill: #FFFFFF;
-    -webkit-transition: fill 0.3s ease;
-    transition: fill 0.3s ease; }
-  .btn--light {
-    background: #FF7931;
-    border: 2px solid #FF7931; }
-    .btn--light:hover, .btn--light:focus {
-      border-color: #000000;
-      color: #000000; }
-      .btn--light:hover svg, .btn--light:focus svg {
-        fill: #000000; }
-  .btn--dark {
-    background: rgba(0, 0, 0, 0.7);
-    border: 2px solid #FF9A64; }
-    .btn--dark:hover, .btn--dark:focus {
-      border-color: #FF7931;
-      color: #FF7931; }
-      .btn--dark:hover svg, .btn--dark:focus svg {
-        fill: #FF7931; }
 
-.mask {
-  position: absolute; }
+.header {
+  padding: 25px 0; }
+  .header__title {
+    font-family: "Work Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 28px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #151C22;
+    max-width: 100px;
+    margin: 0 auto; }
 
-h1 {
-  font-family: "Anton", "Arial", sans-serif; }
+.intro {
+  background-color: #F1F2F4;
+  padding: 50px 0; }
+  .intro__navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .intro__list {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .intro__item {
+    margin-bottom: 35px; }
+    .intro__item:last-child {
+      margin-bottom: 0; }
+  .intro__link {
+    font-family: "Work Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #151C22;
+    text-decoration: none; }
+  .intro__main {
+    max-width: 831px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .intro__intro {
+    padding-top: 192px; }
+  .intro__text {
+    font-family: "Work Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #727A82;
+    margin: 0 0 25px 0; }
+  .intro__title {
+    font-family: "Anton", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 128px;
+    line-height: 1;
+    color: #151C22;
+    margin: 0 0 50px 0; }
+  .intro__btn {
+    max-width: 219px; }

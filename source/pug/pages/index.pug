@@ -33,7 +33,33 @@ html(lang="ru")
   body
     +sprite()  
     header.header.container      
-      h1 DENIM
+      h2.header__title
+        span Nîmes
+    main 
+      .intro 
+        .container
+          nav.intro__navigation
+            ul.intro__list 
+              li.intro__item 
+                a.intro__link(href="#") Woman
+              li.intro__item 
+                a.intro__link(href="#") Man
+              li.intro__item 
+                a.intro__link(href="#") New
+            ul.intro__list 
+              li.intro__item 
+                a.intro__link(href="#") Cart
+              li.intro__item 
+                a.intro__link(href="#") Find
+          .intro__main 
+            .intro__intro 
+              p.intro__text The quality you deserve
+              h1.intro__title DENIM
+              a.btn.intro__btn Check new collection
+            .intro__img
+              img(src="img/intro.jpg" width="430" height="517" alt="фотография девушки в одежде бренда")     
+
+
     block modals
 
     script(src="js/vendor.min.js")

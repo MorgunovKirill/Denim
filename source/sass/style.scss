@@ -5,7 +5,5 @@
 
 //blocks
 
-
-h1 {
-    font-family: $font-family-secondary;
-}
+@import "blocks/header";
+@import "blocks/intro";
