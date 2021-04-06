@@ -36,7 +36,7 @@ html(lang="ru")
       h2.header__title
         span Nîmes
     main 
-      .intro 
+      section.intro 
         .container
           nav.intro__navigation
             ul.intro__list 
@@ -70,6 +70,36 @@ html(lang="ru")
                 a.intro__link(href="#") Facebook
               li.intro__item 
                 a.intro__link(href="#") Instagram
+      section.bestsellers.container
+        .bestsellers__header
+          h2.bestsellers__title Bestsellers
+          a.bestsellers__all(href="#") View all
+        ul.bestsellers__list 
+          li.bestsellers__item 
+            a.bestsellers__link(href="#")
+              .bestsellers__img
+                img(src="img/jacket.jpg" width="270" height="349" alt="фотография девушки в одежде бренда")     
+              h3.bestsellers__heading Jacket 
+              p.bestsellers__price $ 120
+          li.bestsellers__item 
+            a.bestsellers__link(href="#")
+              .bestsellers__img
+                img(src="img/overalls.jpg" width="270" height="349" alt="фотография девушки в одежде бренда")     
+              h3.bestsellers__heading Overalls 
+              p.bestsellers__price $ 120
+          li.bestsellers__item 
+            a.bestsellers__link(href="#")
+              .bestsellers__img
+                img(src="img/jacket2.jpg" width="270" height="349" alt="фотография девушки в одежде бренда")    
+              h3.bestsellers__heading Jacket 
+              p.bestsellers__price $ 120
+          li.bestsellers__item 
+            a.bestsellers__link(href="#")
+              .bestsellers__img
+                img(src="img/overalls2.jpg" width="270" height="349" alt="фотография девушки в одежде бренда")    
+              h3.bestsellers__heading Overalls 
+              p.bestsellers__price $ 120
+
 
     block modals
 
