@@ -48,9 +48,11 @@ html(lang="ru")
                 a.intro__link(href="#") New
             ul.intro__list 
               li.intro__item 
-                a.intro__link(href="#") Cart
+                a.intro__link(href="#")
+                  +icon("icon-cart", 22, 20)
               li.intro__item 
-                a.intro__link(href="#") Find
+                a.intro__link(href="#") 
+                  +icon("icon-magnifier", 20, 20)
           .intro__main 
             .intro__intro 
               p.intro__text The quality you deserve
@@ -61,7 +63,8 @@ html(lang="ru")
           nav.intro__navigation
             ul.intro__list 
               li.intro__item 
-                a.intro__link(href="#") Arrow           
+                a.intro__link(href="#")
+                  +icon("icon-arrowdown", 12, 29)         
             ul.intro__list 
               li.intro__item 
                 a.intro__link(href="#") Facebook

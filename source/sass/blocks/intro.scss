@@ -1,6 +1,14 @@
-.intro {
+.intro {   
     background-color: #F1F2F4;
     padding: 50px 0;
+    position: relative;   
+
+    .container {        
+        min-height: 617px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 
     &__navigation {
         display: flex;
@@ -29,17 +37,55 @@
         line-height: 19px;
         color: #151C22;     
         text-decoration: none;  
+
+        svg {
+            fill: transparent;
+        }
     }
 
     &__main {
-        max-width: 831px;
-        margin: 0 auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;  
+        margin: auto;     
+        max-width: 831px;      
         display: flex;
         justify-content: space-between;
     }
 
     &__intro {
         padding-top: 192px;
+    }
+
+    &__img {
+        position: relative;      
+        margin-top: 50px;
+
+        img {
+            position: relative;
+            z-index: 1;
+        }
+
+        &::before {        
+            content: "";
+            position: absolute;
+            top: -50px;
+            left: -50px;
+            width: 232px;
+            height: 176px;
+            background-image: url("../img/diagonal.png");
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -50px;
+            right: -50px;
+            width: 232px;
+            height: 176px;
+            background-image: url("../img/diagonal.png");
+        }
     }
 
     &__text {
