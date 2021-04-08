@@ -323,60 +323,115 @@ img {
   .fall__btn {
     max-width: 200px; }
 
-.categories__header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 70px; }
+.categories {
+  margin-bottom: 130px; }
+  .categories__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 70px; }
+  .categories__title {
+    font-family: "Work Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #151C22;
+    margin: 0; }
+  .categories__all {
+    font-family: "Work Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #151C22; }
+  .categories__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .categories__item {
+    width: calc(25% - 15px); }
+  .categories__img {
+    margin-bottom: 25px; }
+  .categories__link {
+    font-family: "Work Sans", "Arial", sans-serif;
+    color: #151C22;
+    text-decoration: none; }
+  .categories__heading {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 0 0 15px 0; }
 
-.categories__title {
-  font-family: "Work Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 38px;
-  color: #151C22;
-  margin: 0; }
+.footer {
+  background-color: #151C22;
+  padding: 50px 0; }
+  .footer__title {
+    font-family: "Work Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 28px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #ffffff;
+    max-width: 100px;
+    margin: 0 auto 35px auto; }
 
-.categories__all {
-  font-family: "Work Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
-  color: #151C22; }
-
-.categories__list {
+.site-navigation {
   margin: 0;
   padding: 0;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 37px; }
+  .site-navigation__item {
+    margin-right: 35px; }
+    .site-navigation__item:last-child {
+      margin-right: 0; }
+  .site-navigation__link {
+    font-family: "Work Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    text-decoration: none; }
 
-.categories__item {
-  width: calc(25% - 15px); }
-
-.categories__img {
-  margin-bottom: 25px; }
-
-.categories__link {
-  font-family: "Work Sans", "Arial", sans-serif;
-  color: #151C22;
-  text-decoration: none; }
-
-.categories__heading {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
-  margin: 0 0 15px 0; }
+.socials {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .socials__item {
+    margin-right: 30px; }
+    .socials__item:last-child {
+      margin-right: 0; }
+  .socials__link {
+    text-decoration: none; }
