@@ -50,7 +50,7 @@ html(lang="ru")
           a.header-navigation__link(href="#" aria-label="корзина покупок")
             +icon("icon-cart", 22, 20)             
     main
-      .intro.intro--catalog
+      section.intro.intro--catalog
           .container
             .intro__intro 
               p.intro__text
@@ -62,7 +62,8 @@ html(lang="ru")
               h1.intro__title Denim Collection Fall 2019
             .intro__img 
               img(src="img/catalogintro.jpg" width="299" height="260" alt="фотография джинс с надписью 'We see what we want'") 
-      .catalog.container
+      section.catalog.container
+        h2.visually-hidden Каталог
         ul.catalog__list
           li.catalog__item 
             a.card(href="#")
@@ -100,7 +101,7 @@ html(lang="ru")
                 img(src="img/Jacket8.jpg" width="243" height="270" alt="фотография девушки в одежде бренда")     
               h3.card__heading Jacket 
               p.card__price $ 120
-          li.catalog__item 
+          li.catalog__item.catalog__item--big 
             a.card(href="#")
               .card__img
                 img(src="img/Jacketbig1.jpg" width="552" height="670" alt="фотография девушки в одежде бренда")     
@@ -118,6 +119,9 @@ html(lang="ru")
                 img(src="img/Jacket10.jpg" width="243" height="270" alt="фотография девушки в одежде бренда")     
               h3.card__heading Jacket 
               p.card__price $ 120 
+        .catalog__more
+          .catalog__pagination  Showing 9 of 45 items
+          button.catalog__btn.btn Load more
 
     footer.footer
       .container

@@ -50,7 +50,7 @@
       </ul>
     </header>
     <main>
-      <div class="intro intro--catalog">
+      <section class="intro intro--catalog">
         <div class="container">
           <div class="intro__intro"> 
             <p class="intro__text"><a class="intro__back-link" href="#"> All categories</a>/<a class="intro__back-link" href="#"> Woman</a>/ <a class="intro__back-link"> Jackets</a></p>
@@ -58,8 +58,9 @@
           </div>
           <div class="intro__img"> <img src="img/catalogintro.jpg" width="299" height="260" alt="фотография джинс с надписью 'We see what we want'"></div>
         </div>
-      </div>
-      <div class="catalog container">
+      </section>
+      <section class="catalog container">
+        <h2 class="visually-hidden">Каталог</h2>
         <ul class="catalog__list">
           <li class="catalog__item"> <a class="card" href="#">
               <div class="card__img"><img src="img/Jacket3.jpg" width="243" height="270" alt="фотография девушки в одежде бренда"></div>
@@ -85,7 +86,7 @@
               <div class="card__img"><img src="img/Jacket8.jpg" width="243" height="270" alt="фотография девушки в одежде бренда"></div>
               <h3 class="card__heading">Jacket </h3>
               <p class="card__price">$ 120</p></a></li>
-          <li class="catalog__item"> <a class="card" href="#">
+          <li class="catalog__item catalog__item--big"> <a class="card" href="#">
               <div class="card__img"><img src="img/Jacketbig1.jpg" width="552" height="670" alt="фотография девушки в одежде бренда"></div>
               <h3 class="card__heading">Jacket </h3>
               <p class="card__price">$ 120              </p></a></li>
@@ -98,7 +99,11 @@
               <h3 class="card__heading">Jacket </h3>
               <p class="card__price">$ 120 </p></a></li>
         </ul>
-      </div>
+        <div class="catalog__more">
+          <div class="catalog__pagination"> Showing 9 of 45 items</div>
+          <button class="catalog__btn btn">Load more</button>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="container">

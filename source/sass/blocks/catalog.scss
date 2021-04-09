@@ -1,15 +1,47 @@
 .catalog {
+    margin-bottom: 130px;
+    
     &__list {
         margin: 0 0 75px 0;
         padding: 0;
         list-style: none;  
         display: grid;   
-        grid-template-columns: repeat(4, 1fr);
-        grid-row-gap: 66px;
-        grid-column-gap: 20px;
+        grid-template-columns: repeat(auto-fill, 243px);
+        grid-gap: 66px;    
     }
 
     &__item {
-        
-    }    
+        .card__img {
+            min-height: 270px;
+        }
+
+        &--big {
+            grid-column: span 2;
+            grid-row: span 2;
+
+            .card__img {
+               width: 552px;
+               height: 670px;
+
+                img {                    
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }   
+    
+    &__more {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__pagination {
+        margin-bottom: 40px;
+    }
+
+    &__btn {
+        min-width: 260px;
+    }
 }
