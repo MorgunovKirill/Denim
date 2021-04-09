@@ -48,16 +48,16 @@ html(lang="ru")
                 a.intro__link(href="#") New
             ul.intro__list 
               li.intro__item 
-                a.intro__link(href="#")
+                a.intro__link(href="#" aria-label="корзина покупок")
                   +icon("icon-cart", 22, 20)
               li.intro__item 
-                a.intro__link(href="#") 
+                a.intro__link(href="#" aria-label="искать по сайту") 
                   +icon("icon-magnifier", 20, 20)
           .intro__main 
             .intro__intro 
               p.intro__text The quality you deserve
               h1.intro__title DENIM
-              a.btn.intro__btn(href="#") Check new collection
+              a.btn.intro__btn(href="catalog.html") Check new collection
             .intro__img
               img(src="img/intro.jpg" width="430" height="517" alt="фотография девушки в одежде бренда")     
           nav.intro__navigation
@@ -106,7 +106,7 @@ html(lang="ru")
           .fall__info 
             p.fall__description Street fashion collection 
             h2.fall__title Fall 2019
-            a.btn.fall__btn(href="#") Shop now
+            a.btn.fall__btn(href="catalog.html") Shop now
       section.categories.container 
         .categories__header
           h2.categories__title Shop by category
@@ -132,34 +132,34 @@ html(lang="ru")
               .categories__img
                 img(src="img/Overalls3.jpg" width="270" height="290" alt="фотография девушки в одежде бренда")     
               h3.categories__heading Overalls
-      footer.footer
-        .container
-          h2.footer__title
-            span Nîmes
-          ul.site-navigation 
-            li.site-navigation__item
-              a.site-navigation__link(href="#") Shop
-            li.site-navigation__item
-              a.site-navigation__link(href="#") Delivery
-            li.site-navigation__item
-              a.site-navigation__link(href="#") Service
-            li.site-navigation__item
-              a.site-navigation__link(href="#") Sitemap
-            li.site-navigation__item
-              a.site-navigation__link(href="#") Contacts
-          ul.socials 
-            li.socials__item
-              a.socials__link(href="#" aria-label="ссылка на facebook")
-                +icon("icon-facebook", 12, 20)
-            li.socials__item
-              a.socials__link(href="#" aria-label="ссылка на instagram")
-                +icon("icon-instagram", 20, 20)
-            li.socials__item
-              a.socials__link(href="#" aria-label="ссылка на parler")
-                +icon("icon-parler", 21, 21)
-            li.socials__item
-              a.socials__link(href="#" aria-label="ссылка на twitter")
-                +icon("icon-twitter", 22, 18)
+    footer.footer
+      .container
+        h2.footer__title
+          span Nîmes
+        ul.site-navigation 
+          li.site-navigation__item
+            a.site-navigation__link(href="#") Shop
+          li.site-navigation__item
+            a.site-navigation__link(href="#") Delivery
+          li.site-navigation__item
+            a.site-navigation__link(href="#") Service
+          li.site-navigation__item
+            a.site-navigation__link(href="#") Sitemap
+          li.site-navigation__item
+            a.site-navigation__link(href="#") Contacts
+        ul.socials 
+          li.socials__item
+            a.socials__link(href="#" aria-label="ссылка на facebook")
+              +icon("icon-facebook", 12, 20)
+          li.socials__item
+            a.socials__link(href="#" aria-label="ссылка на instagram")
+              +icon("icon-instagram", 20, 20)
+          li.socials__item
+            a.socials__link(href="#" aria-label="ссылка на parler")
+              +icon("icon-parler", 21, 21)
+          li.socials__item
+            a.socials__link(href="#" aria-label="ссылка на twitter")
+              +icon("icon-twitter", 22, 18)
 
     block modals
 

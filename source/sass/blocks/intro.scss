@@ -2,7 +2,7 @@
     background-color: #F1F2F4;
     padding: 50px 0;
     position: relative;   
-    margin-bottom: 130px;
+    margin-bottom: 130px;   
 
     .container {        
         min-height: 617px;
@@ -27,6 +27,28 @@
 
         &:last-child {
             margin-bottom: 0;
+        }
+    }
+
+    &__back-link {
+        display: inline-block;
+        font-family: $font-family-primary;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;        
+        text-decoration: none;
+        color: #151C22;
+        margin-left: 10px;
+        margin-right: 0;        
+    }
+
+    &__back-link[href] {
+        color: #727A82;
+        margin-right: 10px;
+
+        &:first-child {
+            margin-left: 0;
         }
     }
 
@@ -75,7 +97,7 @@
             left: -50px;
             width: 232px;
             height: 176px;
-            background-image: url("../img/diagonal.png");
+            background-image: url("../img/diagonal-left.svg");
         }
 
         &::after {
@@ -85,7 +107,7 @@
             right: -50px;
             width: 232px;
             height: 176px;
-            background-image: url("../img/diagonal.png");
+            background-image: url("../img/diagonal-right.svg");
         }
     }
 
@@ -113,5 +135,51 @@
 
     &__btn {
         max-width: 219px;
+    }
+
+    &--catalog {
+        padding-top: 0;
+        padding-bottom: 0;
+
+        .container {
+            flex-direction: row;           
+            min-height: initial;
+            max-width: 760px;
+        }
+        
+        .intro__title {            
+            font-family:  $font-family-primary;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 125%;  
+            max-width: 272px;    
+            margin: 0; 
+        }
+
+        .intro__intro {
+            padding-top: 73px;
+        }
+
+        .intro__img {
+            margin: 0;
+
+            img {
+                height: 100%;
+            }
+
+            &::before {      
+              top: initial;
+              bottom: 0;
+              left: -30px;      
+            }
+
+            &::after {      
+                bottom: initial;
+                top: 0;
+                right: -30px;
+                background-image: url("../img/diagonal-left.svg");
+            }
+        }
     }
 }

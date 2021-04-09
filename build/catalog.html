@@ -31,101 +31,34 @@
 <path d="M21.1623 2.65593C20.3989 2.99362 19.5893 3.2154 18.7603 3.31393C19.6341 2.79136 20.288 1.96894 20.6003 0.999927C19.7803 1.48793 18.8813 1.82993 17.9443 2.01493C17.3149 1.34151 16.4807 0.89489 15.5713 0.744511C14.6618 0.594133 13.7282 0.748418 12.9156 1.18338C12.1029 1.61834 11.4567 2.30961 11.0774 3.14972C10.6981 3.98983 10.607 4.93171 10.8183 5.82893C9.15541 5.74558 7.52863 5.31345 6.04358 4.56059C4.55854 3.80773 3.24843 2.75097 2.1983 1.45893C1.82659 2.09738 1.63125 2.82315 1.6323 3.56193C1.6323 5.01193 2.3703 6.29293 3.4923 7.04293C2.82831 7.02202 2.17893 6.84271 1.5983 6.51993V6.57193C1.5985 7.53763 1.93267 8.47354 2.54414 9.22099C3.15562 9.96843 4.00678 10.4814 4.9533 10.6729C4.33691 10.84 3.6906 10.8646 3.0633 10.7449C3.33016 11.5762 3.8503 12.3031 4.55089 12.824C5.25147 13.3449 6.09743 13.6337 6.9703 13.6499C6.10278 14.3313 5.10947 14.8349 4.04718 15.1321C2.98488 15.4293 1.87442 15.5142 0.779297 15.3819C2.69099 16.6114 4.91639 17.264 7.1893 17.2619C14.8823 17.2619 19.0893 10.8889 19.0893 5.36193C19.0893 5.18193 19.0843 4.99993 19.0763 4.82193C19.8952 4.23009 20.6019 3.49695 21.1633 2.65693L21.1623 2.65593Z" fill="white"/>
 </symbol></svg>
     </div>
-    <header class="header container">     
+    <header class="header container">  
+      <ul class="header-navigation header-navigation--site"> 
+        <li class="header-navigation__item"> <a class="header-navigation__link" href="#">Woman   </a></li>
+        <li class="header-navigation__item"> <a class="header-navigation__link" href="#">Man   </a></li>
+        <li class="header-navigation__item"> <a class="header-navigation__link" href="#">New   </a></li>
+      </ul>
       <h2 class="header__title"><span>Nîmes</span></h2>
+      <ul class="header-navigation header-navigation--user">
+        <li class="header-navigation__item"> <a class="header-navigation__link" href="#" aria-label="искать по сайту">
+            <svg width="20" height="20" aria-hidden="true">
+              <use xlink:href="#icon-magnifier"></use>
+            </svg></a></li>
+        <li class="header-navigation__item"> <a class="header-navigation__link" href="#" aria-label="корзина покупок">
+            <svg width="22" height="20" aria-hidden="true">
+              <use xlink:href="#icon-cart"></use>
+            </svg></a></li>
+      </ul>
     </header>
-    <main> 
-      <section class="intro"> 
+    <main>
+      <div class="intro intro--catalog">
         <div class="container">
-          <nav class="intro__navigation">
-            <ul class="intro__list"> 
-              <li class="intro__item"> <a class="intro__link" href="#">Woman</a></li>
-              <li class="intro__item"> <a class="intro__link" href="#">Man</a></li>
-              <li class="intro__item"> <a class="intro__link" href="#">New</a></li>
-            </ul>
-            <ul class="intro__list"> 
-              <li class="intro__item"> <a class="intro__link" href="#" aria-label="корзина покупок">
-                  <svg width="22" height="20" aria-hidden="true">
-                    <use xlink:href="#icon-cart"></use>
-                  </svg></a></li>
-              <li class="intro__item"> <a class="intro__link" href="#" aria-label="искать по сайту"> 
-                  <svg width="20" height="20" aria-hidden="true">
-                    <use xlink:href="#icon-magnifier"></use>
-                  </svg></a></li>
-            </ul>
-          </nav>
-          <div class="intro__main"> 
-            <div class="intro__intro"> 
-              <p class="intro__text">The quality you deserve</p>
-              <h1 class="intro__title">DENIM</h1><a class="btn intro__btn" href="catalog.html">Check new collection</a>
-            </div>
-            <div class="intro__img"><img src="img/intro.jpg" width="430" height="517" alt="фотография девушки в одежде бренда"></div>
+          <div class="intro__intro"> 
+            <p class="intro__text"><a class="intro__back-link" href="#"> All categories</a>/<a class="intro__back-link" href="#"> Woman</a>/ <a class="intro__back-link"> Jackets</a></p>
+            <h1 class="intro__title">Denim Collection Fall 2019</h1>
           </div>
-          <nav class="intro__navigation">
-            <ul class="intro__list"> 
-              <li class="intro__item"> <a class="intro__link" href="#">
-                  <svg width="12" height="29" aria-hidden="true">
-                    <use xlink:href="#icon-arrowdown"></use>
-                  </svg></a></li>
-            </ul>
-            <ul class="intro__list"> 
-              <li class="intro__item"> <a class="intro__link" href="#">Facebook</a></li>
-              <li class="intro__item"> <a class="intro__link" href="#">Instagram</a></li>
-            </ul>
-          </nav>
+          <div class="intro__img"> <img src="img/catalogintro.jpg" width="299" height="260" alt="фотография джинс с надписью 'We see what we want'"></div>
         </div>
-      </section>
-      <section class="bestsellers container">
-        <div class="bestsellers__header">
-          <h2 class="bestsellers__title">Bestsellers</h2><a class="bestsellers__all" href="#">View all</a>
-        </div>
-        <ul class="bestsellers__list"> 
-          <li class="bestsellers__item"> <a class="bestsellers__link" href="#">
-              <div class="bestsellers__img"><img src="img/jacket.jpg" width="270" height="349" alt="фотография девушки в одежде бренда"></div>
-              <h3 class="bestsellers__heading">Jacket </h3>
-              <p class="bestsellers__price">$ 120</p></a></li>
-          <li class="bestsellers__item"> <a class="bestsellers__link" href="#">
-              <div class="bestsellers__img"><img src="img/overalls.jpg" width="270" height="349" alt="фотография девушки в одежде бренда"></div>
-              <h3 class="bestsellers__heading">Overalls </h3>
-              <p class="bestsellers__price">$ 120</p></a></li>
-          <li class="bestsellers__item"> <a class="bestsellers__link" href="#">
-              <div class="bestsellers__img"><img src="img/jacket2.jpg" width="270" height="349" alt="фотография девушки в одежде бренда"></div>
-              <h3 class="bestsellers__heading">Jacket </h3>
-              <p class="bestsellers__price">$ 120</p></a></li>
-          <li class="bestsellers__item"> <a class="bestsellers__link" href="#">
-              <div class="bestsellers__img"><img src="img/overalls2.jpg" width="270" height="349" alt="фотография девушки в одежде бренда"></div>
-              <h3 class="bestsellers__heading">Overalls </h3>
-              <p class="bestsellers__price">$ 120</p></a></li>
-        </ul>
-      </section>
-      <section class="fall container">
-        <div class="fall__image"> <img src="img/Fall2019.jpg" width="700" height="370" alt="фотография девушки и пярня в одежде бренда"></div>
-        <div class="fall__container"> 
-          <div class="fall__info"> 
-            <p class="fall__description">Street fashion collection </p>
-            <h2 class="fall__title">Fall 2019</h2><a class="btn fall__btn" href="catalog.html">Shop now</a>
-          </div>
-        </div>
-      </section>
-      <section class="categories container"> 
-        <div class="categories__header">
-          <h2 class="categories__title">Shop by category</h2><a class="categories__all" href="#">View all</a>
-        </div>
-        <ul class="categories__list">
-          <li class="categories__item"> <a class="categories__link" href="#">
-              <div class="categories__img"><img src="img/Jeans.jpg" width="270" height="349" alt="фотография девушки в одежде бренда"></div>
-              <h3 class="categories__heading">Jacket</h3></a></li>
-          <li class="categories__item"> <a class="categories__link" href="#">
-              <div class="categories__img"><img src="img/Shirts.jpg" width="270" height="290" alt="фотография девушки в одежде бренда"></div>
-              <h3 class="categories__heading">Shirts              </h3></a></li>
-          <li class="categories__item"> <a class="categories__link" href="#">
-              <div class="categories__img"><img src="img/jackets.jpg" width="270" height="349" alt="фотография девушки в одежде бренда"></div>
-              <h3 class="categories__heading">Jackets</h3></a></li>
-          <li class="categories__item"> <a class="categories__link" href="#">
-              <div class="categories__img"><img src="img/Overalls3.jpg" width="270" height="290" alt="фотография девушки в одежде бренда"></div>
-              <h3 class="categories__heading">Overalls</h3></a></li>
-        </ul>
-      </section>
+      </div>
     </main>
     <footer class="footer">
       <div class="container">
