@@ -504,9 +504,12 @@ img {
     fill: transparent; }
 
 .catalog__list {
-  margin: 0;
+  margin: 0 0 75px 0;
   padding: 0;
-  list-style: none; }
-
-.catalog__item {
-  width: calc(25% - 15px); }
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 66px;
+  grid-column-gap: 20px; }
