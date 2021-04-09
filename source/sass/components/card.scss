@@ -1,0 +1,26 @@
+.card {  
+    font-family: $font-family-primary;
+    color: #151C22;
+    text-decoration: none;
+
+
+    &__img {
+        margin-bottom: 25px;
+    }
+
+    &__heading {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        margin: 0 0 15px 0;
+    }
+
+    &__price {
+        margin: 0;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+    }
+}

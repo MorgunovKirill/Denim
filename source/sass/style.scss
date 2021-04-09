@@ -3,6 +3,9 @@
 @import "mixins";
 @import "general";
 
+//components
+@import "components/card";
+
 //blocks
 
 @import "blocks/header";
@@ -14,3 +17,4 @@
 @import "blocks/site-navigation";
 @import "blocks/socials";
 @import "blocks/header-navigation";
+@import "blocks/catalog";
