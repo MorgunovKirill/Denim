@@ -1,0 +1,130 @@
+.details {
+    width: 50%;
+    padding: 70px;
+
+    &__title {
+        margin: 0 0 40px 0;
+        font-family: $font-family-primary;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+        color: #151C22;
+    }
+
+    &__description {
+        margin: 0 0 50px 0;
+        font-family: $font-family-primary;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+        color: #151C22;
+    }
+
+    &__color {
+        border: none;
+        padding: 0;
+        margin: 0 0 40px 0;
+
+        label {
+            position: relative;
+            display: inline-flex;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;         
+            transition: border 0.3s ease;
+            margin-right: 27px;
+            cursor: pointer;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                margin: auto;
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+            }
+
+            &[for="lightgray"] {
+                &::before {
+                    background-color: #B0C3C7;
+                }                
+            }
+
+            &[for="blue"] {
+                &::before {
+                    background-color: #3B6392;
+                } 
+            }
+
+            &[for="gray"] {
+                &::before {
+                    background-color: #BFC3C8;
+                }                 
+            }
+        }
+
+        input[type="radio"]:checked + label {
+            border: 1px solid #B0C3C7;
+        }
+    }
+
+    &__heading {
+        margin: 0 0 50px 0;
+        font-family: $font-family-primary;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    legend.details__heading {
+        font-family: $font-family-primary;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;          
+        color: #151C22;
+        margin: 0 0 25px 0;
+    }
+
+    &__size {
+        border: none;
+        padding: 0;
+        margin: 0 0 40px 0;
+
+        label {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            color: #727A82;
+            transition: color 0.3s ease;
+            margin-right: 20px;
+            cursor: pointer;     
+        }
+
+        input[type="radio"]:checked + label {
+            color: #151C22;
+        }
+    }
+
+    &__btn {
+        max-width: 200px;
+    }
+
+    input[type="radio"] {
+        position: absolute;
+        clip: rect(0 0 0 0);
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        font-size: 0;
+    }   
+}

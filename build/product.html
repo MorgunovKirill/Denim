@@ -50,59 +50,63 @@
       </ul>
     </header>
     <main>
-      <section class="intro intro--catalog">
-        <div class="container">
-          <div class="intro__intro"> 
-            <p class="intro__text"><a class="intro__back-link" href="#"> All categories</a>/<a class="intro__back-link" href="#"> Woman</a>/ <a class="intro__back-link"> Jackets</a></p>
-            <h1 class="intro__title">Denim Collection Fall 2019</h1>
+      <section class="product"> 
+        <div class="container"> 
+          <div class="gallery"> </div>
+          <div class="details">
+            <h1 class="details__title">Overalls </h1>
+            <p class="details__description">Overalls in washed organic cotton denim. Collar, button fly, and adjustable belt at waist. Chest pockets with flap. Long, gently flared sleeves and straight legs with front pockets and back pockets.</p>
+            <form action="#" type="GET">             
+              <fieldset class="details__color">
+                <legend class="details__heading">Color  </legend>
+                <input type="radio" name="color" value="lightgray" id="lightgray">
+                <label for="lightgray"></label>
+                <input type="radio" name="color" value="blue" id="blue">
+                <label for="blue"></label>
+                <input type="radio" name="color" value="gray" id="gray">
+                <label for="gray">            </label>
+              </fieldset>
+              <fieldset class="details__size">
+                <legend class="details__heading">Size </legend>
+                <input type="radio" name="size" value="XS" id="XS">
+                <label for="XS">XS</label>
+                <input type="radio" name="size" value="S" id="S">
+                <label for="S">S</label>
+                <input type="radio" name="size" value="M" id="M">
+                <label for="M">M</label>
+                <input type="radio" name="size" value="L" id="L">
+                <label for="L">L</label>
+                <input type="radio" name="size" value="XL" id="XL">
+                <label for="XL">XL</label>
+              </fieldset>
+              <h2 class="details__heading">$ 160</h2>
+              <div class="details__btn btn">Add to cart </div>
+            </form>
           </div>
-          <div class="intro__img"> <img src="img/catalogintro.jpg" width="299" height="260" alt="фотография джинс с надписью 'We see what we want'"></div>
         </div>
       </section>
-      <section class="catalog container">
-        <h2 class="visually-hidden">Каталог</h2>
-        <ul class="catalog__list">
-          <li class="catalog__item"> <a class="card" href="product.html">
-              <div class="card__img"><img src="img/Jacket3.jpg" width="243" height="270" alt="фотография девушки в одежде бренда"></div>
-              <h3 class="card__heading">Jacket </h3>
-              <p class="card__price">$ 120</p></a></li>
-          <li class="catalog__item"> <a class="card" href="product.html">
-              <div class="card__img"><img src="img/Jacket4.jpg" width="243" height="270" alt="фотография девушки в одежде бренда"></div>
-              <h3 class="card__heading">Jacket </h3>
-              <p class="card__price">$ 120</p></a></li>
-          <li class="catalog__item"> <a class="card" href="product.html">
-              <div class="card__img"><img src="img/Jacket5.jpg" width="243" height="270" alt="фотография девушки в одежде бренда"></div>
-              <h3 class="card__heading">Jacket </h3>
-              <p class="card__price">$ 120</p></a></li>
-          <li class="catalog__item"> <a class="card" href="product.html">
-              <div class="card__img"><img src="img/Jacket6.jpg" width="243" height="270" alt="фотография девушки в одежде бренда"></div>
-              <h3 class="card__heading">Jacket </h3>
-              <p class="card__price">$ 120</p></a></li>
-          <li class="catalog__item"> <a class="card" href="product.html">
-              <div class="card__img"><img src="img/Jacket7.jpg" width="243" height="270" alt="фотография девушки в одежде бренда"></div>
-              <h3 class="card__heading">Jacket </h3>
-              <p class="card__price">$ 120</p></a></li>
-          <li class="catalog__item"> <a class="card" href="product.html">
-              <div class="card__img"><img src="img/Jacket8.jpg" width="243" height="270" alt="фотография девушки в одежде бренда"></div>
-              <h3 class="card__heading">Jacket </h3>
-              <p class="card__price">$ 120</p></a></li>
-          <li class="catalog__item catalog__item--big"> <a class="card" href="product.html">
-              <div class="card__img"><img src="img/Jacketbig1.jpg" width="552" height="670" alt="фотография девушки в одежде бренда"></div>
-              <h3 class="card__heading">Jacket </h3>
-              <p class="card__price">$ 120              </p></a></li>
-          <li class="catalog__item"> <a class="card" href="product.html">
-              <div class="card__img"><img src="img/Jacket9.jpg" width="243" height="270" alt="фотография девушки в одежде бренда"></div>
-              <h3 class="card__heading">Jacket </h3>
-              <p class="card__price">$ 120</p></a></li>
-          <li class="catalog__item"> <a class="card" href="product.html">
-              <div class="card__img"><img src="img/Jacket10.jpg" width="243" height="270" alt="фотография девушки в одежде бренда"></div>
-              <h3 class="card__heading">Jacket </h3>
-              <p class="card__price">$ 120 </p></a></li>
-        </ul>
-        <div class="catalog__more">
-          <div class="catalog__pagination"> Showing 9 of 45 items</div>
-          <button class="catalog__btn btn">Load more</button>
+      <section class="bestsellers container">
+        <div class="bestsellers__header">
+          <h2 class="bestsellers__title">You may also like</h2><a class="bestsellers__all" href="#">View all</a>
         </div>
+        <ul class="bestsellers__list">          
+          <li class="bestsellers__item"> <a class="card" href="#">
+              <div class="card__img"><img src="img/overalls.jpg" width="270" height="349" alt="фотография девушки в одежде бренда"></div>
+              <h3 class="card__heading">Overalls </h3>
+              <p class="card__price">$ 120</p></a></li>
+          <li class="bestsellers__item"> <a class="card" href="#">
+              <div class="card__img"><img src="img/jacket.jpg" width="270" height="349" alt="фотография девушки в одежде бренда"></div>
+              <h3 class="card__heading">Jacket </h3>
+              <p class="card__price">$ 120</p></a></li>
+          <li class="bestsellers__item"> <a class="card" href="#">
+              <div class="card__img"><img src="img/jacket2.jpg" width="270" height="349" alt="фотография девушки в одежде бренда"></div>
+              <h3 class="card__heading">Jacket </h3>
+              <p class="card__price">$ 120</p></a></li>
+          <li class="bestsellers__item"> <a class="card" href="#">
+              <div class="card__img"><img src="img/overalls2.jpg" width="270" height="349" alt="фотография девушки в одежде бренда"></div>
+              <h3 class="card__heading">Overalls </h3>
+              <p class="card__price">$ 120</p></a></li>
+        </ul>
       </section>
     </main>
     <footer class="footer">
