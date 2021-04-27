@@ -4,6 +4,11 @@
     position: relative;   
     margin-bottom: 130px;   
 
+    @media (max-width: 1024px) {
+        padding: 45px 0;
+        margin-bottom: 100px;
+     }
+
     .container {        
         min-height: 617px;
         display: flex;
@@ -20,6 +25,32 @@
         margin: 0;
         padding: 0;
         list-style: none;   
+
+
+        &:not(.intro__list--cart) {
+            @media (max-width: 1170px) {
+                display: flex;
+            } 
+            
+            .intro__item {
+                &:last-child {
+                    @media (max-width: 1170px) {
+                        margin-right: 0;
+                     }
+                }
+
+                @media (max-width: 1170px) {
+                    margin-bottom: 0;
+                    margin-right: 35px;
+                 }
+            }
+        }
+        
+        &--cart {
+            @media (max-width: 1024px) {
+                display: flex;
+            }    
+        }
     }
 
     &__item {
@@ -27,6 +58,15 @@
 
         &:last-child {
             margin-bottom: 0;
+
+            @media (max-width: 1024px) {
+                margin-right: 0;
+             }
+        }
+
+        @media (max-width: 1024px) {
+           margin-bottom: 0;
+           margin-right: 35px;
         }
     }
 
@@ -75,19 +115,38 @@
         max-width: 831px;      
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: 1024px) {
+            position: static;
+            margin-bottom: 70px;
+        }
     }
 
     &__intro {
         padding-top: 192px;
+     
+        @media (max-width: 1024px) {
+            padding-top: 160px;
+            margin-right: 67px;
+        }
     }
 
     &__img {
         position: relative;      
         margin-top: 50px;
 
+        @media (max-width: 1024px) {
+            margin-top: 28px;
+        }
+
         img {
             position: relative;
             z-index: 1;
+
+            @media (max-width: 1024px) {
+                width: 264px;
+                height: 319px;
+            }
         }
 
         &::before {        
@@ -98,6 +157,11 @@
             width: 232px;
             height: 176px;
             background-image: url("../img/diagonal-left.svg");
+
+            @media (max-width: 1024px) {
+                width: 141px;
+                height: 104px;
+            }
         }
 
         &::after {
@@ -108,6 +172,13 @@
             width: 232px;
             height: 176px;
             background-image: url("../img/diagonal-right.svg");
+
+            @media (max-width: 1024px) {
+                width: 141px;
+                height: 104px;
+                bottom: initial;
+                top: 269px;
+            }
         }
     }
 

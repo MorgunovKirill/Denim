@@ -1,11 +1,19 @@
 .bestsellers {
     margin-bottom: 130px;
+
+    @media (max-width: 1024px) {
+        margin-bottom: 100px;
+     }
     
     &__header {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 70px;
+
+        @media (max-width: 1024px) {
+            margin-bottom: 60px;
+         }
     }
 
     &__title {
@@ -33,9 +41,18 @@
         list-style: none;
         display: flex;
         justify-content: space-between;
+        
+        @media (max-width: 1024px) {
+            flex-wrap: wrap;        
+        }
     }
 
     &__item {
         width: calc(25% - 15px);
+
+        @media (max-width: 1024px) {
+            width: calc(50% - 15px);
+            margin-bottom: 15px;
+        }
     }       
 }

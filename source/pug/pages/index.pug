@@ -46,7 +46,7 @@ html(lang="ru")
                 a.intro__link(href="#") Man
               li.intro__item 
                 a.intro__link(href="#") New
-            ul.intro__list 
+            ul.intro__list.intro__list--cart 
               li.intro__item 
                 a.intro__link(href="#" aria-label="корзина покупок")
                   +icon("icon-cart", 22, 20)
@@ -122,12 +122,12 @@ html(lang="ru")
               .card__img
                 img(src="img/Shirts.jpg" width="270" height="290" alt="фотография девушки в одежде бренда")     
               h3.card__heading Shirts              
-          li.categories__item 
+          li.categories__item.categories__item--big 
             a.card(href="#")
               .card__img
                 img(src="img/jackets.jpg" width="270" height="349" alt="фотография девушки в одежде бренда")     
               h3.card__heading Jackets
-          li.categories__item 
+          li.categories__item.categories__item--small  
             a.card(href="#")
               .card__img
                 img(src="img/Overalls3.jpg" width="270" height="290" alt="фотография девушки в одежде бренда")     
