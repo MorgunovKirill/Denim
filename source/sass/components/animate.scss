@@ -110,3 +110,19 @@
 .fadeInDownBig {
   animation-name: fadeInDownBig;
 }
+
+@keyframes fadeInTopBig {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -2500px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInTopBig {
+  animation-name: fadeInTopBig;
+}

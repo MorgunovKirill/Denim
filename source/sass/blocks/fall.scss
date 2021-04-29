@@ -1,6 +1,12 @@
 .fall {
     margin-bottom: 130px;
     display: flex;
+    opacity: 0;
+
+    &.anim-active {
+        animation-duration: 5s;
+        animation-fill-mode: both;
+    }
 
     &__image {
         img {
