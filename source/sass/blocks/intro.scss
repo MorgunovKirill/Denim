@@ -192,6 +192,15 @@
         align-items: center;
         color: #727A82;
         margin: 0 0 25px 0;
+        transform: translate(0px, -120%);
+        opacity: 0;
+        transition: transform 0.8s ease 0s, opacity  0.8s ease 0s;
+
+        &.anim-active {
+            transform: translate(0px, 0px);
+            opacity: 1;
+            transition: transform 0.8s ease 0.4s, opacity  0.8s ease 0.4s;
+        }
     }
 
     &__title {
@@ -202,6 +211,14 @@
         line-height: 1; 
         color: #151C22;
         margin: 0 0 50px 0;
+        transform: translate(0px, 120%);
+        opacity: 0;
+        transition: transform 0.8s ease 0s, opacity  0.8s ease 0s;
+
+        &.anim-active {
+            transform: translate(0px, 0px);
+            opacity: 1;
+        }
     }
 
     &__btn {
