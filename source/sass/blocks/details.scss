@@ -4,7 +4,11 @@
 
     transform: translate(120%, 0px);
     opacity: 0;
-    transition: transform 0.8s ease 0s, opacity  0.8s ease 0s;      
+    transition: transform 0.8s ease 0s, opacity  0.8s ease 0s;    
+    
+    @media (max-width: 1024px) {
+        padding: 40px 50px;
+    }
 
     &.anim-active {
         transform: translate(0px, 0px);
@@ -19,6 +23,12 @@
         font-size: 32px;
         line-height: 38px;
         color: #151C22;
+
+        @media (max-width: 1024px) {
+            font-size: 28px;
+            line-height: 33px;
+            margin-bottom: 20px;
+        }
     }
 
     &__description {
@@ -31,12 +41,22 @@
         display: flex;
         align-items: center;
         color: #151C22;
+
+        @media (max-width: 1024px) {
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 30px;
+        }
     }
 
     &__color {
         border: none;
         padding: 0;
         margin: 0 0 40px 0;
+
+        @media (max-width: 1024px) {
+            margin-bottom: 30px;
+        }
 
         label {
             position: relative;
@@ -90,7 +110,7 @@
         font-style: normal;
         font-weight: 700;
         font-size: 18px;
-        line-height: 21px;
+        line-height: 21px;       
     }
 
     legend.details__heading {
@@ -101,6 +121,10 @@
         line-height: 21px;          
         color: #151C22;
         margin: 0 0 17px 0;
+
+        @media (max-width: 1024px) {
+            margin-bottom: 20px;
+        }
     }
 
     &__size {

@@ -1,6 +1,6 @@
 .gallery {  
     width: 50%;
-
+   
     &.anim-active {
         .gallery__gallery {
             transform: translate(0px, 0px);
@@ -14,11 +14,36 @@
 
         transform: translate(-120%, 0px);
         opacity: 0;
-        transition: transform 0.8s ease 0s, opacity  0.8s ease 0s;      
+        transition: transform 0.8s ease 0s, opacity  0.8s ease 0s; 
+
+        @media (max-width: 1024px) {
+            max-width:  324px; 
+            margin: 0;   
+        }
     }
 
     &__main-image {
         margin-bottom: 20px;
+
+        img {
+            object-fit: cover;
+
+            @media (max-width: 1024px) {
+                width: 324px;
+                height: 360px;
+            }
+        }
+    }
+
+    &__image {
+        img {
+            object-fit: cover;
+
+            @media (max-width: 1024px) {
+                width: 151px;
+                height: 99px;
+            }
+        }
     }
 
     &__list {
@@ -27,5 +52,16 @@
         list-style: none;
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: 1024px) {
+            flex-wrap: wrap;
+            margin-bottom: -22px;
+        }
+    }
+
+    &__item {
+        @media (max-width: 1024px) {
+            margin-bottom: 22px;
+        }
     }
 }

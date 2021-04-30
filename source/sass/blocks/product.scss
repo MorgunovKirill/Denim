@@ -3,6 +3,10 @@
     margin-top: 55px;
     margin-bottom: 129px;
 
+    @media (max-width: 1024px) {
+        margin-bottom: 100px;
+    }
+
     .container {
         display: flex;
     }
