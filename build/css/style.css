@@ -382,6 +382,12 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+    @media (max-width: 768px) {
+      .intro__navigation {
+        margin-bottom: 60px; } }
+    @media (max-width: 768px) {
+      .intro__navigation:last-of-type {
+        display: none; } }
   .intro__list {
     margin: 0;
     padding: 0;
@@ -398,6 +404,9 @@ img {
       .intro__list:not(.intro__list--cart) .intro__item {
         margin-bottom: 0;
         margin-right: 35px; } }
+    @media (max-width: 768px) {
+      .intro__list:not(.intro__list--cart) .intro__item {
+        margin-right: 25px; } }
     @media (max-width: 1024px) {
       .intro__list--cart {
         display: -webkit-box;
@@ -414,6 +423,9 @@ img {
       .intro__item {
         margin-bottom: 0;
         margin-right: 35px; } }
+    @media (max-width: 768px) {
+      .intro__item {
+        margin-right: 25px; } }
   .intro__back-link {
     display: inline-block;
     font-family: "Work Sans", "Arial", sans-serif;
@@ -457,18 +469,36 @@ img {
       .intro__main {
         position: static;
         margin-bottom: 70px; } }
+    @media (max-width: 768px) {
+      .intro__main {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin-bottom: 0; } }
   .intro__intro {
     padding-top: 192px; }
     @media (max-width: 1024px) {
       .intro__intro {
         padding-top: 160px;
         margin-right: 67px; } }
+    @media (max-width: 768px) {
+      .intro__intro {
+        padding-top: 0;
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
+        margin-right: 0; } }
   .intro__img {
     position: relative;
     margin-top: 50px; }
     @media (max-width: 1024px) {
       .intro__img {
         margin-top: 28px; } }
+    @media (max-width: 768px) {
+      .intro__img {
+        margin-top: 0;
+        margin-bottom: 50px; } }
     .intro__img img {
       position: relative;
       z-index: 1;
@@ -479,6 +509,10 @@ img {
         .intro__img img {
           width: 264px;
           height: 319px; } }
+      @media (max-width: 768px) {
+        .intro__img img {
+          width: 202px;
+          height: 249px; } }
     .intro__img::before {
       content: "";
       position: absolute;
@@ -498,6 +532,12 @@ img {
         .intro__img::before {
           width: 141px;
           height: 104px; } }
+      @media (max-width: 768px) {
+        .intro__img::before {
+          width: 109px;
+          height: 80px;
+          top: -20px;
+          left: -20px; } }
     .intro__img::after {
       content: "";
       position: absolute;
@@ -519,6 +559,13 @@ img {
           height: 104px;
           bottom: initial;
           top: 269px; } }
+      @media (max-width: 768px) {
+        .intro__img::after {
+          width: 109px;
+          height: 80px;
+          bottom: -20px;
+          top: initial;
+          right: -20px; } }
     .intro__img.anim-active img {
       opacity: 1; }
     .intro__img.anim-active::before {
@@ -558,6 +605,11 @@ img {
       transition: opacity  0.8s ease 0.4s, -webkit-transform 0.8s ease 0.4s;
       transition: transform 0.8s ease 0.4s, opacity  0.8s ease 0.4s;
       transition: transform 0.8s ease 0.4s, opacity  0.8s ease 0.4s, -webkit-transform 0.8s ease 0.4s; }
+    @media (max-width: 768px) {
+      .intro__text {
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 20px; } }
   .intro__title {
     font-family: "Anton", "Arial", sans-serif;
     font-style: normal;
@@ -577,6 +629,10 @@ img {
       -webkit-transform: translate(0px, 0px);
               transform: translate(0px, 0px);
       opacity: 1; }
+    @media (max-width: 768px) {
+      .intro__title {
+        font-size: 86px;
+        line-height: 1; } }
   .intro__btn {
     max-width: 219px;
     opacity: 0;
@@ -584,6 +640,12 @@ img {
     transition: opacity  0.8s ease 1s; }
     .intro__btn.anim-active {
       opacity: 1; }
+    @media (max-width: 768px) {
+      .intro__btn {
+        display: block;
+        margin: 0 auto;
+        max-width: 204px;
+        padding: 27px 16px; } }
   .intro--catalog {
     padding-top: 0;
     padding-bottom: 0;
