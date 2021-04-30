@@ -1,9 +1,20 @@
 .gallery {  
     width: 50%;
 
+    &.anim-active {
+        .gallery__gallery {
+            transform: translate(0px, 0px);
+            opacity: 1;
+        }
+    }
+
     &__gallery {
         max-width: 400px;
         margin: 0 auto;
+
+        transform: translate(-120%, 0px);
+        opacity: 0;
+        transition: transform 0.8s ease 0s, opacity  0.8s ease 0s;      
     }
 
     &__main-image {

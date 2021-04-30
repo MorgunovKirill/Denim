@@ -1,5 +1,5 @@
 .catalog {
-    margin-bottom: 130px;
+    margin-bottom: 130px;    
 
     @media (max-width: 1024px) {
         margin-bottom: 100px;
@@ -12,7 +12,8 @@
         display: grid;   
         // grid-template-columns: repeat(auto-fill, 243px);
         grid-template-columns: repeat(4, 1fr);
-        grid-gap: 66px;    
+        grid-gap: 66px;
+        
 
         @media (max-width: 1200px) {
             grid-template-columns: repeat(3, 1fr);

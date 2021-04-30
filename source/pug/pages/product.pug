@@ -44,7 +44,7 @@ html(lang="ru")
     main
       section.product 
         .container 
-          .gallery 
+          .gallery.anim-items.anim-no-hide 
             .gallery__gallery
               .gallery__main-image
                 img(src="img/gallery-1.jpg" width="400" height="523" alt="фотография девушки в одежде бренда")     
@@ -61,7 +61,7 @@ html(lang="ru")
                 .gallery__item 
                   a(href="#").gallery__image 
                      img(src="img/gallery-5.jpg" width="85" height="113" alt="фотография девушки в одежде бренда")                
-          .details
+          .details.anim-items.anim-no-hide
             h1.details__title Overalls 
             p.details__description Overalls in washed organic cotton denim. Collar, button fly, and adjustable belt at waist. Chest pockets with flap. Long, gently flared sleeves and straight legs with front pockets and back pockets.
             form(action="#" type="GET")              
@@ -92,25 +92,25 @@ html(lang="ru")
           h2.bestsellers__title You may also like
           a.bestsellers__all(href="#") View all
         ul.bestsellers__list           
-          li.bestsellers__item 
+          li.bestsellers__item.anim-items.fadeInLeftBig
             a.card(href="#")
               .card__img
                 img(src="img/overalls.jpg" width="270" height="349" alt="фотография девушки в одежде бренда")     
               h3.card__heading Overalls 
               p.card__price $ 120
-          li.bestsellers__item 
+          li.bestsellers__item.anim-items.fadeInLeftBig 
             a.card(href="#")
               .card__img
                 img(src="img/jacket.jpg" width="270" height="349" alt="фотография девушки в одежде бренда")     
               h3.card__heading Jacket 
               p.card__price $ 120
-          li.bestsellers__item 
+          li.bestsellers__item.anim-items.fadeInRightBig  
             a.card(href="#")
               .card__img
                 img(src="img/jacket2.jpg" width="270" height="349" alt="фотография девушки в одежде бренда")    
               h3.card__heading Jacket 
               p.card__price $ 120
-          li.bestsellers__item 
+          li.bestsellers__item.anim-items.fadeInRightBig  
             a.card(href="#")
               .card__img
                 img(src="img/overalls2.jpg" width="270" height="349" alt="фотография девушки в одежде бренда")    
