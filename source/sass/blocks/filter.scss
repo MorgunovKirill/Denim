@@ -1,3 +1,40 @@
 .filter {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
+
+  &__filter {
+    max-width: 243px;
+    margin-left: auto;
+  }
+
+  &__toggle {
+    display: block;
+    padding: 16px 18px;
+    border: 2px solid #151c22;
+    position: relative;
+    text-decoration: none;
+    font-family: $font-family-primary;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #151c22;
+
+    svg {
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      top: 15px;
+      right: 15px;
+      transform: rotate(90deg);
+    }
+  }
+
+  &__popup {
+    background: #ffffff;
+    border: 2px solid #151c22;
+
+    .filter__toggle {
+      border: none;
+    }
+  }
 }

@@ -324,6 +324,29 @@ img {
   -webkit-animation-name: fadeInTopBig;
           animation-name: fadeInTopBig; }
 
+.accordion {
+  overflow: hidden; }
+  @media (max-width: 1024px) {
+    .accordion {
+      width: 100%; } }
+  .accordion__btn {
+    position: relative; }
+    @media (max-width: 1024px) {
+      .accordion__btn {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; } }
+  .accordion__content {
+    display: block;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 1;
+    -webkit-transition: max-height 0.3s ease, overflow 0.3s ease;
+    transition: max-height 0.3s ease, overflow 0.3s ease; }
+    .accordion__content.active {
+      overflow: visible; }
+
 .header {
   padding-top: 25px;
   padding-bottom: 25px;
@@ -1235,3 +1258,31 @@ img {
 
 .filter {
   margin-bottom: 40px; }
+  .filter__filter {
+    max-width: 243px;
+    margin-left: auto; }
+  .filter__toggle {
+    display: block;
+    padding: 16px 18px;
+    border: 2px solid #151c22;
+    position: relative;
+    text-decoration: none;
+    font-family: "Work Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #151c22; }
+    .filter__toggle svg {
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      top: 15px;
+      right: 15px;
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg); }
+  .filter__popup {
+    background: #ffffff;
+    border: 2px solid #151c22; }
+    .filter__popup .filter__toggle {
+      border: none; }

@@ -19,101 +19,123 @@ html(lang="ru")
     meta(charset="utf-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    meta(name="description", content="Denim - clothes")  
+    meta(name="description", content="Denim - clothes")
     link(rel="stylesheet", href="css/style.min.css")
 
   body
-    +sprite()  
-    header.header.container   
-      ul.header-navigation.header-navigation--site 
-        li.header-navigation__item 
-          a.header-navigation__link(href="#") Woman   
-        li.header-navigation__item 
-          a.header-navigation__link(href="#") Man   
-        li.header-navigation__item 
-          a.header-navigation__link(href="#") New   
+    +sprite()
+    header.header.container
+      ul.header-navigation.header-navigation--site
+        li.header-navigation__item
+          a.header-navigation__link(href="#") Woman
+        li.header-navigation__item
+          a.header-navigation__link(href="#") Man
+        li.header-navigation__item
+          a.header-navigation__link(href="#") New
       h2.header__title
         a(href="index.html") Nîmes
       ul.header-navigation.header-navigation--user
-         li.header-navigation__item 
+         li.header-navigation__item
           a.header-navigation__link(href="#" aria-label="искать по сайту")
-            +icon("icon-magnifier", 20, 20)            
-         li.header-navigation__item 
+            +icon("icon-magnifier", 20, 20)
+         li.header-navigation__item
           a.header-navigation__link(href="#" aria-label="корзина покупок")
-            +icon("icon-cart", 22, 20)             
+            +icon("icon-cart", 22, 20)
     main
       section.intro.intro--catalog
           .container
-            .intro__intro 
+            .intro__intro
               p.intro__text.anim-items.anim-no-hide
                   a.intro__back-link(href="#")  All categories
                   | /
                   a.intro__back-link(href="#")  Woman
-                  | / 
+                  | /
                   a.intro__back-link  Jackets
               h1.intro__title.anim-items.anim-no-hide Denim Collection Fall 2019
-            .intro__img.anim-items.anim-no-hide 
-              img(src="img/catalogintro.jpg" width="299" height="260" alt="фотография джинс с надписью 'We see what we want'") 
-      section.filter 
-        .container 
-          .filter.accordion filter by
+            .intro__img.anim-items.anim-no-hide
+              img(src="img/catalogintro.jpg" width="299" height="260" alt="фотография джинс с надписью 'We see what we want'")
+      section.filter
+        .container
+          .filter__filter
+            a.filter__toggle(href="#")
+              span Filter by
+              +icon("icon-arrowsmall", 25, 25)
+            .filter__popup
+              .filter__type.accordion
+                a.filter__toggle.accordion__btn(href="#")
+                  span Price
+                  +icon("icon-arrowsmall", 25, 25)
+                .filter__content.accordion__content
+                  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem consectetur laboriosam corporis laudantium odio non dolore iusto, velit, temporibus saepe error consequatur soluta blanditiis, commodi quo! Veniam, numquam. Ut, hic.
+              .filter__type.accordion
+                a.filter__toggle.accordion__btn(href="#")
+                  span Color
+                  +icon("icon-arrowsmall", 25, 25)
+                .filter__content.accordion__content
+                  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem consectetur laboriosam corporis laudantium odio non dolore iusto, velit, temporibus saepe error consequatur soluta blanditiis, commodi quo! Veniam, numquam. Ut, hic.
+              .filter__type.accordion
+                a.filter__toggle.accordion__btn(href="#")
+                  span Collection
+                  +icon("icon-arrowsmall", 25, 25)
+                .filter__content.accordion__content
+                  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem consectetur laboriosam corporis laudantium odio non dolore iusto, velit, temporibus saepe error consequatur soluta blanditiis, commodi quo! Veniam, numquam. Ut, hic.
       section.catalog.container
         h2.visually-hidden Каталог
         ul.catalog__list
-          li.catalog__item 
+          li.catalog__item
             a.card(href="product.html")
               .card__img
-                img(src="img/Jacket3.jpg" width="243" height="270" alt="фотография девушки в одежде бренда")     
-              h3.card__heading Jacket 
+                img(src="img/Jacket3.jpg" width="243" height="270" alt="фотография девушки в одежде бренда")
+              h3.card__heading Jacket
               p.card__price $ 120
-          li.catalog__item 
+          li.catalog__item
             a.card(href="product.html")
               .card__img
-                img(src="img/Jacket4.jpg" width="243" height="270" alt="фотография девушки в одежде бренда")     
-              h3.card__heading Jacket 
+                img(src="img/Jacket4.jpg" width="243" height="270" alt="фотография девушки в одежде бренда")
+              h3.card__heading Jacket
               p.card__price $ 120
-          li.catalog__item 
+          li.catalog__item
             a.card(href="product.html")
               .card__img
-                img(src="img/Jacket5.jpg" width="243" height="270" alt="фотография девушки в одежде бренда")     
-              h3.card__heading Jacket 
+                img(src="img/Jacket5.jpg" width="243" height="270" alt="фотография девушки в одежде бренда")
+              h3.card__heading Jacket
               p.card__price $ 120
-          li.catalog__item 
+          li.catalog__item
             a.card(href="product.html")
               .card__img
-                img(src="img/Jacket6.jpg" width="243" height="270" alt="фотография девушки в одежде бренда")     
-              h3.card__heading Jacket 
+                img(src="img/Jacket6.jpg" width="243" height="270" alt="фотография девушки в одежде бренда")
+              h3.card__heading Jacket
               p.card__price $ 120
-          li.catalog__item 
+          li.catalog__item
             a.card(href="product.html")
               .card__img
-                img(src="img/Jacket7.jpg" width="243" height="270" alt="фотография девушки в одежде бренда")     
-              h3.card__heading Jacket 
+                img(src="img/Jacket7.jpg" width="243" height="270" alt="фотография девушки в одежде бренда")
+              h3.card__heading Jacket
               p.card__price $ 120
-          li.catalog__item 
+          li.catalog__item
             a.card(href="product.html")
               .card__img
-                img(src="img/Jacket8.jpg" width="243" height="270" alt="фотография девушки в одежде бренда")     
-              h3.card__heading Jacket 
+                img(src="img/Jacket8.jpg" width="243" height="270" alt="фотография девушки в одежде бренда")
+              h3.card__heading Jacket
               p.card__price $ 120
-          li.catalog__item.catalog__item--big 
+          li.catalog__item.catalog__item--big
             a.card(href="product.html")
               .card__img
-                img(src="img/Jacketbig1.jpg" width="552" height="670" alt="фотография девушки в одежде бренда")     
-              h3.card__heading Jacket 
-              p.card__price $ 120              
-          li.catalog__item 
-            a.card(href="product.html")
-              .card__img
-                img(src="img/Jacket9.jpg" width="243" height="270" alt="фотография девушки в одежде бренда")     
-              h3.card__heading Jacket 
+                img(src="img/Jacketbig1.jpg" width="552" height="670" alt="фотография девушки в одежде бренда")
+              h3.card__heading Jacket
               p.card__price $ 120
-          li.catalog__item 
+          li.catalog__item
             a.card(href="product.html")
               .card__img
-                img(src="img/Jacket10.jpg" width="243" height="270" alt="фотография девушки в одежде бренда")     
-              h3.card__heading Jacket 
-              p.card__price $ 120 
+                img(src="img/Jacket9.jpg" width="243" height="270" alt="фотография девушки в одежде бренда")
+              h3.card__heading Jacket
+              p.card__price $ 120
+          li.catalog__item
+            a.card(href="product.html")
+              .card__img
+                img(src="img/Jacket10.jpg" width="243" height="270" alt="фотография девушки в одежде бренда")
+              h3.card__heading Jacket
+              p.card__price $ 120
         .catalog__more
           .catalog__pagination  Showing 9 of 45 items
           button.catalog__btn.btn Load more
@@ -122,7 +144,7 @@ html(lang="ru")
       .container
         h2.footer__title
           span Nîmes
-        ul.site-navigation 
+        ul.site-navigation
           li.site-navigation__item
             a.site-navigation__link(href="#") Shop
           li.site-navigation__item
@@ -133,7 +155,7 @@ html(lang="ru")
             a.site-navigation__link(href="#") Sitemap
           li.site-navigation__item
             a.site-navigation__link(href="#") Contacts
-        ul.socials 
+        ul.socials
           li.socials__item
             a.socials__link(href="#" aria-label="ссылка на facebook")
               +icon("icon-facebook", 12, 20)
@@ -151,4 +173,3 @@ html(lang="ru")
 
     script(src="js/vendor.min.js")
     script(src="js/main.min.js")
-      
