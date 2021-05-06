@@ -72,13 +72,33 @@ html(lang="ru")
                   span Color
                   +icon("icon-arrowsmall", 25, 25)
                 .filter__content.accordion__content
-                  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem consectetur laboriosam corporis laudantium odio non dolore iusto, velit, temporibus saepe error consequatur soluta blanditiis, commodi quo! Veniam, numquam. Ut, hic.
+                  fieldset.details__color
+                    input(type="radio" name="color" value="lightgray" id="lightgray")
+                    label(for="lightgray")
+                    input(type="radio" name="color" value="blue" id="blue")
+                    label(for="blue")
+                    input(type="radio" name="color" value="gray" id="gray")
+                    label(for="gray")
+                    input(type="radio" name="color" value="black" id="black")
+                    label(for="black")
+                    input(type="radio" name="color" value="ashy" id="ashy")
+                    label(for="ashy")
+                    input(type="radio" name="color" value="lightblue" id="lightblue")
+                    label(for="lightblue")
               .filter__type.accordion
                 a.filter__toggle.accordion__btn(href="#")
                   span Collection
                   +icon("icon-arrowsmall", 25, 25)
                 .filter__content.accordion__content
-                  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem consectetur laboriosam corporis laudantium odio non dolore iusto, velit, temporibus saepe error consequatur soluta blanditiis, commodi quo! Veniam, numquam. Ut, hic.
+                  fieldset.details__size
+                    input(type="radio" name="style" value="Casual" id="Casual")
+                    label(for="Casual") Casual
+                    input(type="radio" name="style" value="Petite" id="Petite")
+                    label(for="Petite") Petite
+                    input(type="radio" name="style" value="Classic" id="Classic")
+                    label(for="Classic") Classic
+                    input(type="radio" name="style" value="Soulluxe" id="Soulluxe")
+                    label(for="Soulluxe") Soulluxe
       section.catalog.container
         h2.visually-hidden Каталог
         ul.catalog__list

@@ -1132,10 +1132,10 @@ img {
   -webkit-transform: translate(120%, 0px);
           transform: translate(120%, 0px);
   opacity: 0;
-  -webkit-transition: opacity  0.8s ease 0s, -webkit-transform 0.8s ease 0s;
-  transition: opacity  0.8s ease 0s, -webkit-transform 0.8s ease 0s;
-  transition: transform 0.8s ease 0s, opacity  0.8s ease 0s;
-  transition: transform 0.8s ease 0s, opacity  0.8s ease 0s, -webkit-transform 0.8s ease 0s; }
+  -webkit-transition: opacity 0.8s ease 0s, -webkit-transform 0.8s ease 0s;
+  transition: opacity 0.8s ease 0s, -webkit-transform 0.8s ease 0s;
+  transition: transform 0.8s ease 0s, opacity 0.8s ease 0s;
+  transition: transform 0.8s ease 0s, opacity 0.8s ease 0s, -webkit-transform 0.8s ease 0s; }
   @media (max-width: 1024px) {
     .details {
       padding: 40px 50px; } }
@@ -1150,7 +1150,7 @@ img {
     font-weight: 700;
     font-size: 32px;
     line-height: 38px;
-    color: #151C22; }
+    color: #151c22; }
     @media (max-width: 1024px) {
       .details__title {
         font-size: 28px;
@@ -1169,7 +1169,7 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    color: #151C22; }
+    color: #151c22; }
     @media (max-width: 1024px) {
       .details__description {
         font-size: 14px;
@@ -1204,13 +1204,19 @@ img {
         height: 16px;
         border-radius: 50%; }
       .details__color label[for="lightgray"]::before {
-        background-color: #B0C3C7; }
+        background-color: #b0c3c7; }
       .details__color label[for="blue"]::before {
-        background-color: #3B6392; }
+        background-color: #3b6392; }
       .details__color label[for="gray"]::before {
-        background-color: #BFC3C8; }
+        background-color: #bfc3c8; }
+      .details__color label[for="black"]::before {
+        background-color: #2d2e2e; }
+      .details__color label[for="ashy"]::before {
+        background-color: #ececec; }
+      .details__color label[for="lightblue"]::before {
+        background-color: #4193da; }
     .details__color input[type="radio"]:checked + label {
-      border: 1px solid #B0C3C7; }
+      border: 1px solid #b0c3c7; }
   .details__heading {
     margin: 0 0 42px 0;
     font-family: "Work Sans", "Arial", sans-serif;
@@ -1224,7 +1230,7 @@ img {
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
-    color: #151C22;
+    color: #151c22;
     margin: 0 0 17px 0; }
     @media (max-width: 1024px) {
       .details legend.details__heading {
@@ -1237,13 +1243,13 @@ img {
       font-weight: 500;
       font-size: 18px;
       line-height: 21px;
-      color: #727A82;
+      color: #727a82;
       -webkit-transition: color 0.3s ease;
       transition: color 0.3s ease;
       margin-right: 20px;
       cursor: pointer; }
     .details__size input[type="radio"]:checked + label {
-      color: #151C22; }
+      color: #151c22; }
   .details__btn {
     max-width: 200px;
     padding-top: 22.5px;
@@ -1259,6 +1265,7 @@ img {
 .filter {
   margin-bottom: 40px; }
   .filter__filter {
+    position: relative;
     max-width: 243px;
     margin-left: auto; }
   .filter__toggle {
@@ -1282,7 +1289,35 @@ img {
       -webkit-transform: rotate(90deg);
               transform: rotate(90deg); }
   .filter__popup {
+    position: absolute;
+    top: 57px;
+    left: 0;
     background: #ffffff;
     border: 2px solid #151c22; }
     .filter__popup .filter__toggle {
       border: none; }
+  .filter__content {
+    padding-left: 15px;
+    padding-right: 15px;
+    -webkit-transition: padding 0.2s ease;
+    transition: padding 0.2s ease; }
+    .filter__content.active {
+      padding-top: 9px;
+      padding-bottom: 25px; }
+  .filter input[type="radio"] {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    font-size: 0; }
+  .filter .details__color {
+    margin-bottom: -20px; }
+  .filter .details__size {
+    margin-bottom: -20px; }
+    .filter .details__size label {
+      display: inline-block; }
+  .filter label {
+    margin-bottom: 20px; }
+  .filter__type {
+    border-bottom: 2px solid #f1f2f4; }
