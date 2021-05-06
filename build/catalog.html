@@ -62,12 +62,22 @@
                 <use xlink:href="#icon-arrowsmall"></use>
               </svg></a>
             <div class="filter__popup">
-              <div class="filter__type accordion"><a class="filter__toggle accordion__btn" href="#"><span>Price</span>
+              <div class="filter__type filter__type--price accordion"><a class="filter__toggle accordion__btn" href="#"><span>Price</span>
                   <svg width="25" height="25" aria-hidden="true">
                     <use xlink:href="#icon-arrowsmall"></use>
                   </svg></a>
                 <div class="filter__content accordion__content">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem consectetur laboriosam corporis laudantium odio non dolore iusto, velit, temporibus saepe error consequatur soluta blanditiis, commodi quo! Veniam, numquam. Ut, hic.</p>
+                  <div class="filter__container">
+                    <div class="range-slider" data-type="price" data-min="10" data-max="300" data-unit="$" data-left-handle="10" data-right-handle="300" data-step="10">
+                      <div class="range-slider__wrapper">
+                        <div class="range-slider__slider"></div>
+                      </div>
+                      <input class="range-slider__input range-slider__input--from" type="text" tabindex="-1" name="price-from">
+                      <input class="range-slider__input range-slider__input--to" type="text" tabindex="-1" name="price-to">
+                      <div class="range-slider__output range-slider__output--lower"><span class="range-slider__value"></span><span class="range-slider__unit"></span></div>
+                      <div class="range-slider__output range-slider__output--upper"><span class="range-slider__value"></span><span class="range-slider__unit"></span></div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="filter__type accordion"><a class="filter__toggle accordion__btn" href="#"><span>Color</span>
@@ -115,7 +125,6 @@
         </div>
       </section>
       <section class="catalog container">
-        <h2 class="visually-hidden">Каталог</h2>
         <ul class="catalog__list">
           <li class="catalog__item"><a class="card" href="product.html">
               <div class="card__img"><img src="img/Jacket3.jpg" width="243" height="270" alt="фотография девушки в одежде бренда"></div>

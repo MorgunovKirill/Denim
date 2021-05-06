@@ -61,12 +61,23 @@ html(lang="ru")
               span Filter by
               +icon("icon-arrowsmall", 25, 25)
             .filter__popup
-              .filter__type.accordion
+              .filter__type.filter__type--price.accordion
                 a.filter__toggle.accordion__btn(href="#")
                   span Price
                   +icon("icon-arrowsmall", 25, 25)
                 .filter__content.accordion__content
-                  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem consectetur laboriosam corporis laudantium odio non dolore iusto, velit, temporibus saepe error consequatur soluta blanditiis, commodi quo! Veniam, numquam. Ut, hic.
+                  .filter__container
+                    .range-slider(data-type="price" data-min="10" data-max="300" data-unit="$" data-left-handle="10" data-right-handle="300" data-step="10")
+                      .range-slider__wrapper
+                        .range-slider__slider
+                      input.range-slider__input.range-slider__input--from(type="text" tabindex="-1" name="price-from")
+                      input.range-slider__input.range-slider__input--to(type="text" tabindex="-1" name="price-to")
+                      .range-slider__output.range-slider__output--lower
+                        span.range-slider__value
+                        span.range-slider__unit
+                      .range-slider__output.range-slider__output--upper
+                        span.range-slider__value
+                        span.range-slider__unit
               .filter__type.accordion
                 a.filter__toggle.accordion__btn(href="#")
                   span Color
@@ -102,7 +113,6 @@ html(lang="ru")
               button.filter__apply-btn.btn(type="button") Apply (9 products)
               button.filter__clear-btn.btn(type="button") Clear all
       section.catalog.container
-        h2.visually-hidden Каталог
         ul.catalog__list
           li.catalog__item
             a.card(href="product.html")

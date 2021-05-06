@@ -1,6 +1,10 @@
 .filter {
   margin-bottom: 40px;
 
+  &__container {
+    min-height: 80px;
+  }
+
   &__filter {
     position: relative;
     max-width: 243px;
@@ -97,5 +101,9 @@
     color: #151c22;
     padding-top: 20.5px;
     padding-bottom: 20.5px;
+  }
+
+  &__cell {
+    min-height: 100px;
   }
 }
