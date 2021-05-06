@@ -8,8 +8,19 @@
   &__btn {
     position: relative;
 
+    svg {
+      transition: transform $modern-transition-settings;
+    }
+
+
     @media (max-width: 1024px) {
       display: flex;
+    }
+
+    &.active {
+      svg {
+        transform: rotate(270deg);
+      }
     }
   }
 
@@ -21,7 +32,7 @@
 
     opacity: 1;
 
-    transition: max-height $default-transition-settings, overflow $default-transition-settings;
+    transition: max-height $modern-transition-settings, overflow $modern-transition-settings, padding $default-transition-settings;
 
     &.active {
       overflow: visible;
