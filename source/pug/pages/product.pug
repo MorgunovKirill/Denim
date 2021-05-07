@@ -25,6 +25,8 @@ html(lang="ru")
   body
     +sprite()
     header.header.container
+      button.header__menu-toggle(type="button")
+        +icon("icon-menu", 20, 10)
       ul.header-navigation.header-navigation--site
         li.header-navigation__item
           a.header-navigation__link(href="#") Woman
