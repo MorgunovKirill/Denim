@@ -98,6 +98,12 @@
     color: #151c22;
     margin-left: 10px;
     margin-right: 0;
+
+    &--all {
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
   }
 
   &__back-link[href] {
@@ -284,6 +290,14 @@
       line-height: 21px;
       margin-bottom: 20px;
     }
+
+    span {
+      &:first-of-type {
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+    }
   }
 
   &__title {
@@ -333,6 +347,7 @@
 
     @media (max-width: 768px) {
       background-color: #ffffff;
+      margin-bottom: 30px;
     }
 
     .container {
@@ -360,6 +375,12 @@
 
       @media (max-width: 768px) {
         padding-top: 0;
+      }
+    }
+
+    .intro__text {
+      @media (max-width: 768px) {
+        margin-bottom: 0;
       }
     }
 

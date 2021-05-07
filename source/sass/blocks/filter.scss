@@ -9,6 +9,10 @@
     position: relative;
     max-width: 245px;
     margin-left: auto;
+
+    @media (max-width: 768px) {
+      max-width: initial;
+    }
   }
 
   &__toggle {
@@ -50,8 +54,17 @@
     background: #ffffff;
     transition: max-height $default-transition-settings, overflow $default-transition-settings;
 
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
     .filter__toggle {
       border: none;
+
+      @media (max-width: 768px) {
+        font-size: 16px;
+        line-height: 19px;
+      }
     }
 
     &.active {

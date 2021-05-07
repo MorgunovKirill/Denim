@@ -698,9 +698,6 @@ img {
     @media (hover: hover), screen and (min-width: 0\0) {
       .range-slider .noUi-handle:hover, .range-slider .noUi-handle:focus {
         border-color: #bb8978; } }
-  @media (max-width: 1024px) {
-    .range-slider {
-      margin-top: 5px; } }
 
 .range-slider__wrapper {
   position: relative;
@@ -761,12 +758,20 @@ img {
       font-size: 24px;
       line-height: 28px;
       text-decoration: none;
-      color: #151C22;
+      color: #151c22;
       -webkit-transition: opacity 0.3s ease;
       transition: opacity 0.3s ease;
       outline: none; }
       .header__title a:hover, .header__title a:focus {
         opacity: 0.5; }
+  .header__menu-toggle {
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer; }
+    @media (max-width: 768px) {
+      .header__menu-toggle {
+        display: block; } }
 
 .intro {
   background-color: #f1f2f4;
@@ -851,6 +856,9 @@ img {
     color: #151c22;
     margin-left: 10px;
     margin-right: 0; }
+    @media (max-width: 768px) {
+      .intro__back-link--all {
+        display: none; } }
   .intro__back-link[href] {
     color: #727a82;
     margin-right: 10px; }
@@ -1024,6 +1032,9 @@ img {
         font-size: 18px;
         line-height: 21px;
         margin-bottom: 20px; } }
+    @media (max-width: 768px) {
+      .intro__text span:first-of-type {
+        display: none; } }
   .intro__title {
     font-family: "Anton", "Arial", sans-serif;
     font-style: normal;
@@ -1066,7 +1077,8 @@ img {
     margin-bottom: 40px; }
     @media (max-width: 768px) {
       .intro--catalog {
-        background-color: #ffffff; } }
+        background-color: #ffffff;
+        margin-bottom: 30px; } }
     .intro--catalog .container {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
@@ -1090,6 +1102,9 @@ img {
       @media (max-width: 768px) {
         .intro--catalog .intro__intro {
           padding-top: 0; } }
+    @media (max-width: 768px) {
+      .intro--catalog .intro__text {
+        margin-bottom: 0; } }
     .intro--catalog .intro__img {
       margin: 0; }
       .intro--catalog .intro__img img {
@@ -1132,7 +1147,7 @@ img {
     font-weight: 700;
     font-size: 32px;
     line-height: 38px;
-    color: #151C22;
+    color: #151c22;
     margin: 0; }
   .bestsellers__all {
     font-family: "Work Sans", "Arial", sans-serif;
@@ -1140,7 +1155,7 @@ img {
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
-    color: #151C22; }
+    color: #151c22; }
   .bestsellers__list {
     margin: 0;
     padding: 0;
@@ -1305,7 +1320,7 @@ img {
               justify-content: flex-end; }
 
 .footer {
-  background-color: #151C22;
+  background-color: #151c22;
   padding: 50px 0; }
   .footer__title {
     font-family: "Work Sans", "Arial", sans-serif;
@@ -1374,6 +1389,9 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media (max-width: 768px) {
+    .header-navigation--site {
+      display: none; } }
   .header-navigation__item {
     margin-right: 35px; }
     .header-navigation__item:last-child {
@@ -1384,7 +1402,7 @@ img {
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-    color: #151C22;
+    color: #151c22;
     text-decoration: none; }
   .header-navigation svg {
     fill: transparent; }
@@ -1394,6 +1412,9 @@ img {
   @media (max-width: 1024px) {
     .catalog {
       margin-bottom: 100px; } }
+  @media (max-width: 768px) {
+    .catalog {
+      margin-bottom: 60px; } }
   .catalog__list {
     margin: 0 0 75px 0;
     padding: 0;
@@ -1684,6 +1705,9 @@ img {
     position: relative;
     max-width: 245px;
     margin-left: auto; }
+    @media (max-width: 768px) {
+      .filter__filter {
+        max-width: initial; } }
   .filter__toggle {
     display: block;
     padding: 16px 18px;
@@ -1720,8 +1744,15 @@ img {
     background: #ffffff;
     -webkit-transition: max-height 0.3s ease, overflow 0.3s ease;
     transition: max-height 0.3s ease, overflow 0.3s ease; }
+    @media (max-width: 768px) {
+      .filter__popup {
+        width: 100%; } }
     .filter__popup .filter__toggle {
       border: none; }
+      @media (max-width: 768px) {
+        .filter__popup .filter__toggle {
+          font-size: 16px;
+          line-height: 19px; } }
     .filter__popup.active {
       border: 2px solid #151c22;
       border-top: none; }

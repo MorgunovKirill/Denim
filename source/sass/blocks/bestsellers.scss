@@ -1,64 +1,64 @@
 .bestsellers {
-    margin-bottom: 130px;
+  margin-bottom: 130px;
+
+  @media (max-width: 1200px) {
+    margin-bottom: 100px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
 
     @media (max-width: 1200px) {
-        margin-bottom: 100px;
-     }
-    
-    &__header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 70px;
+      margin-bottom: 60px;
+    }
+  }
 
-        @media (max-width: 1200px) {
-            margin-bottom: 60px;
-         }
+  &__title {
+    font-family: $font-family-primary;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #151c22;
+    margin: 0;
+  }
+
+  &__all {
+    font-family: $font-family-primary;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #151c22;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 1200px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    width: calc(25% - 15px);
+    opacity: 0;
+
+    @media (max-width: 1200px) {
+      width: calc(50% - 15px);
+      margin-bottom: 15px;
     }
 
-    &__title {
-        font-family: $font-family-primary;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 38px;      
-        color: #151C22;
-        margin: 0;
+    &.anim-active {
+      animation-duration: 3s;
+      animation-fill-mode: both;
     }
-
-    &__all {
-        font-family: $font-family-primary;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 21px;    
-        color: #151C22;
-    }
-
-    &__list {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        display: flex;
-        justify-content: space-between;
-        
-        @media (max-width: 1200px) {
-            flex-wrap: wrap;        
-        }
-    }
-
-    &__item {
-        width: calc(25% - 15px);
-        opacity: 0;
-
-        @media (max-width: 1200px) {
-            width: calc(50% - 15px);
-            margin-bottom: 15px;
-        }
-
-        &.anim-active {
-            animation-duration: 3s;
-            animation-fill-mode: both;
-        }
-    }       
+  }
 }

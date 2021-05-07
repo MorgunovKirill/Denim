@@ -25,6 +25,8 @@ html(lang="ru")
   body
     +sprite()
     header.header.container
+      button.header__menu-toggle(type="button")
+        +icon("icon-menu", 20, 10)
       ul.header-navigation.header-navigation--site
         li.header-navigation__item
           a.header-navigation__link(href="#") Woman
@@ -46,10 +48,10 @@ html(lang="ru")
           .container
             .intro__intro
               p.intro__text.anim-items.anim-no-hide
-                  a.intro__back-link(href="#")  All categories
-                  | /
+                  a.intro__back-link.intro__back-link--all(href="#")  All categories
+                  span /
                   a.intro__back-link(href="#")  Woman
-                  | /
+                  span /
                   a.intro__back-link  Jackets
               h1.intro__title.anim-items.anim-no-hide Denim Collection Fall 2019
             .intro__img.anim-items.anim-no-hide
