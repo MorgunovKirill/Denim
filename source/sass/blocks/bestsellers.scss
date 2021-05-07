@@ -5,6 +5,10 @@
     margin-bottom: 100px;
   }
 
+  @media (max-width: 768px) {
+    margin-bottom: 60px;
+  }
+
   &__header {
     display: flex;
     justify-content: space-between;
@@ -13,6 +17,12 @@
 
     @media (max-width: 1200px) {
       margin-bottom: 60px;
+    }
+
+    .bestsellers__all {
+      @media (max-width: 768px) {
+        display: none;
+      }
     }
   }
 
@@ -33,6 +43,13 @@
     font-size: 18px;
     line-height: 21px;
     color: #151c22;
+
+    @media (max-width: 768px) {
+      display: block;
+      max-width: 80px;
+      text-align: center;
+      margin: 0 auto 0 auto;
+    }
   }
 
   &__list {
@@ -44,6 +61,10 @@
 
     @media (max-width: 1200px) {
       flex-wrap: wrap;
+    }
+
+    @media (max-width: 768px) {
+      margin-bottom: 40px;
     }
   }
 
