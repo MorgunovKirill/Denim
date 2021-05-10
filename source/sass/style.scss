@@ -1,3 +1,6 @@
+//vendor
+
+@import "vendor/nouislider";
 @import "fonts";
 @import "variables";
 @import "mixins";
@@ -6,6 +9,8 @@
 //components
 @import "components/card";
 @import "components/animate";
+@import "components/accordion";
+@import "components/range-slider";
 
 //blocks
 
@@ -23,3 +28,4 @@
 @import "blocks/gallery";
 @import "blocks/details";
 @import "blocks/filter";
+

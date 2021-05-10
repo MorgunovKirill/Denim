@@ -19,87 +19,88 @@ html(lang="ru")
     meta(charset="utf-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    meta(name="description", content="Denim - clothes")  
+    meta(name="description", content="Denim - clothes")
     link(rel="stylesheet", href="css/style.min.css")
 
   body
-    +sprite()  
-    header.header.container      
+    +sprite()
+    header.header.container
       h2.header__title
         span Nîmes
-    main 
-      section.intro 
+    main
+      section.intro
         .container
           nav.intro__navigation
-            ul.intro__list 
-              li.intro__item 
+            ul.intro__list
+              li.intro__item
                 a.intro__link(href="#") Woman
-              li.intro__item 
+              li.intro__item
                 a.intro__link(href="#") Man
-              li.intro__item 
+              li.intro__item
                 a.intro__link(href="#") New
-            ul.intro__list.intro__list--cart 
-              li.intro__item 
+            ul.intro__list.intro__list--cart
+              li.intro__item
                 a.intro__link(href="#" aria-label="корзина покупок")
                   +icon("icon-cart", 22, 20)
-              li.intro__item 
-                a.intro__link(href="#" aria-label="искать по сайту") 
+              li.intro__item
+                a.intro__link(href="#" aria-label="искать по сайту")
                   +icon("icon-magnifier", 20, 20)
-          .intro__main 
-            .intro__intro 
+          .intro__main
+            .intro__intro
               p.intro__text.anim-items.anim-no-hide The quality you deserve
               h1.intro__title.anim-items.anim-no-hide DENIM
               a.btn.intro__btn.anim-items.anim-no-hide(href="catalog.html") Check new collection
             .intro__img.anim-items.anim-no-hide
-              img(src="img/intro.jpg" width="430" height="517" alt="фотография девушки в одежде бренда")     
+              img(src="img/intro.jpg" width="430" height="517" alt="фотография девушки в одежде бренда")
           nav.intro__navigation
-            ul.intro__list 
-              li.intro__item 
+            ul.intro__list
+              li.intro__item
                 a.intro__link(href="#")
-                  +icon("icon-arrowdown", 12, 29)         
-            ul.intro__list 
-              li.intro__item 
+                  +icon("icon-arrowdown", 12, 29)
+            ul.intro__list
+              li.intro__item
                 a.intro__link(href="#") Facebook
-              li.intro__item 
+              li.intro__item
                 a.intro__link(href="#") Instagram
       section.bestsellers.container
         .bestsellers__header
           h2.bestsellers__title Bestsellers
           a.bestsellers__all(href="#") View all
-        ul.bestsellers__list 
+        ul.bestsellers__list
           li.bestsellers__item.anim-items.fadeInLeftBig
             a.card(href="#")
               .card__img
-                img(src="img/jacket.jpg" width="270" height="349" alt="фотография девушки в одежде бренда")     
-              h3.card__heading Jacket 
+                img(src="img/jacket.jpg" width="270" height="349" alt="фотография девушки в одежде бренда")
+              h3.card__heading Jacket
               p.card__price $ 120
           li.bestsellers__item.anim-items.fadeInLeftBig
             a.card(href="#")
               .card__img
-                img(src="img/overalls.jpg" width="270" height="349" alt="фотография девушки в одежде бренда")     
-              h3.card__heading Overalls 
+                img(src="img/overalls.jpg" width="270" height="349" alt="фотография девушки в одежде бренда")
+              h3.card__heading Overalls
               p.card__price $ 120
-          li.bestsellers__item.anim-items.fadeInRightBig 
+          li.bestsellers__item.anim-items.fadeInRightBig
             a.card(href="#")
               .card__img
-                img(src="img/jacket2.jpg" width="270" height="349" alt="фотография девушки в одежде бренда")    
-              h3.card__heading Jacket 
+                img(src="img/jacket2.jpg" width="270" height="349" alt="фотография девушки в одежде бренда")
+              h3.card__heading Jacket
               p.card__price $ 120
-          li.bestsellers__item.anim-items.fadeInRightBig 
+          li.bestsellers__item.anim-items.fadeInRightBig
             a.card(href="#")
               .card__img
-                img(src="img/overalls2.jpg" width="270" height="349" alt="фотография девушки в одежде бренда")    
-              h3.card__heading Overalls 
+                img(src="img/overalls2.jpg" width="270" height="349" alt="фотография девушки в одежде бренда")
+              h3.card__heading Overalls
               p.card__price $ 120
+        a.bestsellers__all(href="#") View all
       section.fall.container.anim-items.fadeInTopBig
-        .fall__image 
-           img(src="img/Fall2019.jpg" width="700" height="370" alt="фотография девушки и пярня в одежде бренда") 
-        .fall__container 
-          .fall__info 
-            p.fall__description Street fashion collection 
+        .fall__image
+           img(src="img/Fall2019.jpg" width="700" height="370" alt="фотография девушки и пярня в одежде бренда")
+        .fall__container
+          .fall__info
+            p.fall__description Street fashion collection
             h2.fall__title Fall 2019
             a.btn.fall__btn(href="catalog.html") Shop now
-      section.categories.container 
+      section.categories.container
         .categories__header
           h2.categories__title Shop by category
           a.categories__all(href="#") View all
@@ -107,28 +108,31 @@ html(lang="ru")
           li.categories__item.anim-items.fadeInLeftBig
             a.card(href="#")
               .card__img
-                img(src="img/Jeans.jpg" width="270" height="349" alt="фотография девушки в одежде бренда")     
+                img(src="img/Jeans.jpg" width="270" height="349" alt="фотография девушки в одежде бренда")
               h3.card__heading Jacket
-          li.categories__item.anim-items.fadeInLeftBig 
+          li.categories__item.anim-items.fadeInLeftBig
             a.card(href="#")
               .card__img
-                img(src="img/Shirts.jpg" width="270" height="290" alt="фотография девушки в одежде бренда")     
-              h3.card__heading Shirts              
-          li.categories__item.categories__item--big.anim-items.fadeInRightBig  
+                img(src="img/Shirts.jpg" width="270" height="290" alt="фотография девушки в одежде бренда")
+              h3.card__heading Shirts
+          li.categories__item.categories__item--big.anim-items.fadeInRightBig
             a.card(href="#")
               .card__img
-                img(src="img/jackets.jpg" width="270" height="349" alt="фотография девушки в одежде бренда")     
+                img(src="img/jackets.jpg" width="270" height="349" alt="фотография девушки в одежде бренда")
               h3.card__heading Jackets
-          li.categories__item.categories__item--small.anim-items.fadeInRightBig   
+          li.categories__item.categories__item--small.anim-items.fadeInRightBig
             a.card(href="#")
               .card__img
-                img(src="img/Overalls3.jpg" width="270" height="290" alt="фотография девушки в одежде бренда")     
+                img(src="img/Overalls3.jpg" width="270" height="290" alt="фотография девушки в одежде бренда")
               h3.card__heading Overalls
+        a.categories__all(href="#") View all
     footer.footer
       .container
         h2.footer__title
           span Nîmes
-        ul.site-navigation 
+        ul.site-navigation
+          li.site-navigation__item.site-navigation__item--title
+            a.site-navigation__link Nîmes
           li.site-navigation__item
             a.site-navigation__link(href="#") Shop
           li.site-navigation__item
@@ -139,7 +143,7 @@ html(lang="ru")
             a.site-navigation__link(href="#") Sitemap
           li.site-navigation__item
             a.site-navigation__link(href="#") Contacts
-        ul.socials 
+        ul.socials
           li.socials__item
             a.socials__link(href="#" aria-label="ссылка на facebook")
               +icon("icon-facebook", 12, 20)
@@ -157,4 +161,3 @@ html(lang="ru")
 
     script(src="js/vendor.min.js")
     script(src="js/main.min.js")
-      
