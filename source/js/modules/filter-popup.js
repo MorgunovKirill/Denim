@@ -11,21 +11,19 @@ const initfilterPopup = () => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
       btn.blur();
-      const maxHeight = filterPopup.style.maxHeight;
+      const maxHeight = filterPopup.style.height;
 
       if (maxHeight) {
-        filterPopup.style.maxHeight = null;
+        filterPopup.style.height = null;
         btn.classList.remove('active');
         filterPopup.classList.remove('active');
       } else {
-        filterPopup.style.maxHeight = filterPopup.scrollHeight + 'px';
+        filterPopup.style.height = 'auto';
         btn.classList.add('active');
         filterPopup.classList.add('active');
       }
     });
   }
-
-
 };
 
 export {initfilterPopup};
