@@ -104,72 +104,72 @@ html(lang="ru")
                   +icon("icon-arrowsmall", 25, 25)
                 .filter__content.accordion__content
                   fieldset.details__size
-                    input(type="radio" name="style" value="Casual" id="Casual")
+                    input(type="radio" name="style" value="casual" id="Casual")
                     label(for="Casual") Casual
-                    input(type="radio" name="style" value="Petite" id="Petite")
+                    input(type="radio" name="style" value="petite" id="Petite")
                     label(for="Petite") Petite
-                    input(type="radio" name="style" value="Classic" id="Classic")
+                    input(type="radio" name="style" value="classic" id="Classic")
                     label(for="Classic") Classic
-                    input(type="radio" name="style" value="Soulluxe" id="Soulluxe")
+                    input(type="radio" name="style" value="soulluxe" id="Soulluxe")
                     label(for="Soulluxe") Soulluxe
               button.filter__apply-btn.btn(type="button") Apply (9 products)
               button.filter__clear-btn.btn(type="button") Clear all
       section.catalog.container
         ul.catalog__list
-          li.catalog__item
+          li.catalog__item(data-type="casual" data-color="lightblue")
             a.card(href="product.html")
               .card__img
                 img(src="img/Jacket3.jpg" width="243" height="270" alt="фотография девушки в одежде бренда")
               h3.card__heading Jacket
-              p.card__price $ 120
-          li.catalog__item
+              p.card__price $ 40
+          li.catalog__item(data-type="classic" data-color="gray")
             a.card(href="product.html")
               .card__img
                 img(src="img/Jacket4.jpg" width="243" height="270" alt="фотография девушки в одежде бренда")
               h3.card__heading Jacket
-              p.card__price $ 120
-          li.catalog__item
+              p.card__price $ 60
+          li.catalog__item(data-type="classic" data-color="lightgray")
             a.card(href="product.html")
               .card__img
                 img(src="img/Jacket5.jpg" width="243" height="270" alt="фотография девушки в одежде бренда")
               h3.card__heading Jacket
-              p.card__price $ 120
-          li.catalog__item
+              p.card__price $ 80
+          li.catalog__item(data-type="soulluxe" data-color="lightgray")
             a.card(href="product.html")
               .card__img
                 img(src="img/Jacket6.jpg" width="243" height="270" alt="фотография девушки в одежде бренда")
               h3.card__heading Jacket
-              p.card__price $ 120
-          li.catalog__item
+              p.card__price $ 220
+          li.catalog__item(data-type="casual" data-color="lightblue")
             a.card(href="product.html")
               .card__img
                 img(src="img/Jacket7.jpg" width="243" height="270" alt="фотография девушки в одежде бренда")
               h3.card__heading Jacket
               p.card__price $ 120
-          li.catalog__item
+          li.catalog__item(data-type="Petite" data-color="ashy")
             a.card(href="product.html")
               .card__img
                 img(src="img/Jacket8.jpg" width="243" height="270" alt="фотография девушки в одежде бренда")
               h3.card__heading Jacket
-              p.card__price $ 120
-          li.catalog__item.catalog__item--big
+              p.card__price $ 140
+          li.catalog__item.catalog__item--big(data-type="soulluxe" data-color="blue")
             a.card(href="product.html")
               .card__img
                 img(src="img/Jacketbig1.jpg" width="552" height="670" alt="фотография девушки в одежде бренда")
               h3.card__heading Jacket
-              p.card__price $ 120
-          li.catalog__item
+              p.card__price $ 300
+          li.catalog__item(data-type="classic" data-color="blue")
             a.card(href="product.html")
               .card__img
                 img(src="img/Jacket9.jpg" width="243" height="270" alt="фотография девушки в одежде бренда")
               h3.card__heading Jacket
-              p.card__price $ 120
-          li.catalog__item
+              p.card__price $ 250
+          li.catalog__item(data-type="classic" data-color="ashy")
             a.card(href="product.html")
               .card__img
                 img(src="img/Jacket10.jpg" width="243" height="270" alt="фотография девушки в одежде бренда")
               h3.card__heading Jacket
-              p.card__price $ 120
+              p.card__price $ 100
         .catalog__more
           .catalog__pagination  Showing 9 of 45 items
           button.catalog__btn.btn Load more
