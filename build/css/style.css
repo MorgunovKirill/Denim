@@ -1656,7 +1656,7 @@ img {
         margin: 0; } }
     @media (max-width: 768px) {
       .gallery__gallery {
-        margin-bottom: 40px; } }
+        margin: 0 auto 40px auto; } }
   .gallery__main-image {
     margin-bottom: 20px; }
     @media (max-width: 768px) {
@@ -1692,9 +1692,6 @@ img {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
         margin-bottom: -22px; } }
-    @media (max-width: 768px) {
-      .gallery__list {
-        display: none; } }
   @media (max-width: 1024px) {
     .gallery__item {
       margin-bottom: 22px; } }
