@@ -1548,7 +1548,8 @@ img {
     @media (max-width: 768px) {
       .catalog__list {
         -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr); } }
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px; } }
   .catalog__item .card__img {
     min-height: 270px;
     -ms-flex-item-align: center;
